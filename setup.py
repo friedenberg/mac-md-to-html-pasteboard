@@ -15,8 +15,9 @@ setuptools.setup(
     url="https://github.com/friedenberg/mac-md-to-html-pasteboard",
     packages=['mac_md_to_html_pasteboard'],
     package_data={
-        'mac-md-to-html-pasteboard': ['mac_md_to_html_pasteboard/styles'],
+        'mac-md-to-html-pasteboard': ['styles/'],
         },
+    include_package_data=True,
     install_requires=['pyobjc-core', 'pyobjc-framework-Cocoa', 'pypandoc'],
     classifiers=[
         "Programming Language :: Python :: 3",
