@@ -14,8 +14,9 @@ setuptools.setup(
     styled html as public.html to the macOS pasteboard""",
     url="https://github.com/friedenberg/mac-md-to-html-pasteboard",
     packages=['mac_md_to_html_pasteboard'],
+    package_dir={'mac_md_to_html_pasteboard': 'src'},
     package_data={
-        '': ['*.css'],
+        'mac_md_to_html_pasteboard': ['styles/*.css'],
         },
     include_package_data=True,
     install_requires=['pyobjc-core', 'pyobjc-framework-Cocoa', 'pypandoc'],
