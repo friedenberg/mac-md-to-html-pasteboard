@@ -1,8 +1,13 @@
 import setuptools
 
+version = None
+
+with open('VERSION', 'r') as f:
+    version = f.read()
+
 setuptools.setup(
     name="mac-md-to-html-pasteboard",
-    version="1.0.2",
+    version=version,
     author="Sasha Friedenberg",
     author_email="carley.f253fa96@icantbelieveitsnotgmail.com",
     description="""reads markdown from stdin and uses pandoc and pyobjc to copy
@@ -20,6 +25,6 @@ setuptools.setup(
     ],
     python_requires='>=3.7.6',
     entry_points = {
-        'console_scripts': ['md-to-html-pasteboard = mac_md_to_html_pasteboard:main'],
+        'console_scripts': ['md-to-html-pasteboard = mac_md_to_html_pasteboard.__main__:main'],
     }
 )
