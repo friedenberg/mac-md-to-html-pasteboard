@@ -1,5 +1,7 @@
 #! /bin/bash -e
 
+git diff --exit-code -s || (echo "unstaged changes, refusing to release" && exit 1)
+
 ${EDITOR:-${VISUAL:-vi}} ./VERSION
 git add ./VERSION
 git diff --exit-code -s ./VERSION || (echo "version wasn't changed" && exit 1)
