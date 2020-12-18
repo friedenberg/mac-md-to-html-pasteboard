@@ -8,7 +8,7 @@ setuptools.setup(
     description="""reads markdown from stdin and uses pandoc and pyobjc to copy
     styled html as public.html to the macOS pasteboard""",
     url="https://github.com/friedenberg/mac-md-to-html-pasteboard",
-    packages=setuptools.find_packages(),
+    packages=['mac_md_to_html_pasteboard'],
     package_data={
         'mac-md-to-html-pasteboard': ['styles'],
         },
@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     python_requires='>=3.7.6',
     entry_points = {
-        'console_scripts': ['md-to-html-pasteboard = mac_md_to_html_pasteboard.__main__:main'],
+        'console_scripts': ['md-to-html-pasteboard = mac_md_to_html_pasteboard:main'],
     }
 )
