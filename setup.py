@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="mac-md-to-html-pasteboard",
-    version="0.0.1",
+    version="1.0.2",
     author="Sasha Friedenberg",
     author_email="carley.f253fa96@icantbelieveitsnotgmail.com",
     description="""reads markdown from stdin and uses pandoc and pyobjc to copy
