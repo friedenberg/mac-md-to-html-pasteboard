@@ -25,7 +25,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Environment :: MacOS X :: Cocoa",
     ],
-    python_requires='>=3.7.6',
+    python_requires='>=3.7.3',
     entry_points = {
         'console_scripts': ['md-to-html-pasteboard = mac_md_to_html_pasteboard.__main__:main'],
     }
