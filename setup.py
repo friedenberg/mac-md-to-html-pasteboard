@@ -19,7 +19,12 @@ setuptools.setup(
         'mac_md_to_html_pasteboard': ['styles/*.css'],
         },
     include_package_data=True,
-    install_requires=['pyobjc-core', 'pyobjc-framework-Cocoa', 'pypandoc'],
+    install_requires=[
+        'bs4',
+        'pyobjc-core',
+        'pyobjc-framework-Cocoa',
+        'pypandoc'
+        ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
